@@ -212,6 +212,9 @@ a{text-decoration: none;
     .section1 h1{font-size: xx-large;}
     .dropbtn {display:block;}
     nav{display: none;}
+    header, .footer, .dropbtn{
+        background-color: rgb(12, 12, 86);}
+    h1{color: rgb(12, 12, 86);}
 }
 
 @media screen and (min-width:600px) and (max-width: 850px) {.section2 p, .section3 p, .section4 p {width: 250px;}}
