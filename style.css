@@ -1,0 +1,483 @@
+/* Header */
+body{width: 100%;
+margin: 0px;}
+header{
+    background-color: rgb(5, 5, 31);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{height: 40px;
+    padding: 10px;}
+
+nav{display: flexbox;
+    flex-direction: row;
+    padding: 20px;}
+
+nav a{padding: 10px;
+    text-decoration: none;
+    color: rgb(213, 217, 220);
+    position: relative;}
+
+/* Dropdown Button */
+.dropbtn {display:none;
+    background-color: rgb(5, 5, 31);
+    color: rgb(213, 217, 220);
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Cagliostro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color:rgb(5, 5, 31);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+/* First section */
+/* .section1{height: 400px;;
+    width: 100%;
+    background-image: url(Images/read_education_books_book.jpg);
+    background-repeat: no-repeat;
+    background-size: 120% 200%;
+    background-position-x: center;
+    background-position-y:-100px ;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;} */
+
+    .section1{height: 400px;;
+        width: 100%;
+        background-image: url(Images/book2.avif);
+        background-repeat: no-repeat;
+        background-size: 120% 200%;
+        background-position-x: center;
+        background-position-y:-280px ;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}
+
+.quote{font-family: "Allison", cursive;
+        font-weight: bold;
+        font-style: normal;
+        color: rgb(33, 33, 33);
+        font-size: 40px;
+        position: relative;
+        text-align: center;
+  }
+
+h1{ font-family: "Cagliostro", sans-serif;
+    font-weight: 900;
+    font-style: normal;}
+
+p{font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal}
+
+
+a{text-decoration: none;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;}
+
+.section1 h1{color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px rgb(67, 30, 13);
+}
+
+.section1 img {height: 150px;
+            padding: 10px 10px 0px 0px;}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+    width: 15px;
+    height: width;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0.451);
+    color: darkblue;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Second section */
+.section2{background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        height: 300px;}
+.section2 div{display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;}
+.section2 img{height: 200px;
+                border-radius: 5px;
+                padding: 40px;}
+.section2 p{ width: 400px;}
+.section2 h1{color: rgb(12, 12, 76);}
+
+
+
+   /* Third section */
+.section3{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;}
+.section3 div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.section3 img{height: 200px;
+            border-radius: 5px;
+            padding: 40px;}
+.section3 p{ width: 400px;}
+.section3 h1{color: rgb(12, 12, 76);}    
+
+/* Fourth section */
+.section4{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 300px;}
+.section4 div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.section4 img{height: 200px;
+            border-radius: 5px;
+            padding: 40px;}
+.section4 p{ width: 400px;}
+.section4 h1{color: rgb(12, 12, 76);}
+
+@media screen and (max-width: 700px) {
+    .section4 img, .section3 img, .section2 img {
+        display: none;
+    }
+    .section1 h1, .section2 h1, .section3 h1, .section4 h1, .section2 p, .section3 p, .section4 p{
+        width: 100%;
+        text-align: center;
+    }
+    .section4{height: 400px;}
+    .section1{height: max-content;
+        background-position-y: -200px;}
+    .section1 h1{font-size: xx-large;}
+    .dropbtn {display:block;}
+    nav{display: none;}
+}
+
+@media screen and (min-width:600px) and (max-width: 850px) {.section2 p, .section3 p, .section4 p {width: 250px;}}
+/* @media screen and (max-width: 600px) {
+    .Mathematics, .French{flex-direction: column;
+        text-align: center;}
+    .fps{display: block;}
+    .fpw{display: none;}} */
+
+/* Footer */
+footer{
+    background-color: rgb(5, 5, 31);
+}
+
+.footer{margin: 0px;
+        border: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden
+}
+
+footer a, footer p{color: rgb(213, 217, 220);}
+
+/* Our Team Page */
+
+/* Intro */
+.OurTeam{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: max-content;}
+.OurTeam div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.OurTeam p{ width: 800px;
+    text-align: center;}
+.OurTeam h1{color: rgb(12, 12, 76);}
+
+/* Isabelle */
+.Isabelle{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: max-content;}
+.Isabelle div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.Isabelle img{height: 200px;
+            border-radius: 5px;
+            padding: 40px;
+            border-radius: 45%;}
+.Isabelle p{ width: 80%;}
+.Isabelle h1{color: rgb(12, 12, 76);}
+
+/* Giovanna */
+.Giovanna{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: max-content;}
+.Giovanna div{display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;}
+
+@media screen and (max-width: 600px) {
+    .Isabelle {flex-direction: column;}
+    .Giovanna div {height: max-content}
+}
+
+/* Courses */
+/* Quote 1 */
+.coursesquote1{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: max-content;
+    text-align: center;}
+.coursesquote1 div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+
+.coursesquote2{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    height: max-content;}
+.coursesquote2 div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+
+/* Maths */
+.Mathematics{
+    background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;}
+.Mathematics div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        width: 50%;}
+.Mathematics img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 50%;}
+.Mathematics h1{color: rgb(12, 12, 76);}
+
+/* French */
+.fpw{display: block;}
+.fps{display: none;}
+.French{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: max-content;}
+.French div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        width: 50%;}
+.French img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 50%;}
+.French h1{color: rgb(12, 12, 76);}
+
+@media screen and (max-width: 600px) {
+    .Mathematics, .French{flex-direction: column;
+        text-align: center;}
+    .fps{display: block;}
+    .fpw{display: none;}}
+
+/* Italian */
+.Italian{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;}
+.Italian div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.Italian img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 50%;}
+.Italian p{ width: 400px;}
+.Italian h1{color: rgb(12, 12, 76);}
+
+/* Latin */
+.Latin{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 300px;}
+.Latin div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.Latin img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 50%;}
+.Latin p{ width: 400px;}
+.Latin h1{color: rgb(12, 12, 76);}
+
+/* Contact and booking page */
+/* Section 1 */
+.cbsection1{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;}
+.cbsection1 div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.cbsection1 img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 5%;}
+.cbsection1 p{ width: 400px;}
+/* .cbs1 h1{color: rgb(12, 12, 76);} */
+
+ /* Section 2 */
+.cbsection2{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 800px;}
+.divw{display: block;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        width: 600px;}
+.cbsection2 img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 5%;}
+.cbsection2 h1{color: rgb(12, 12, 76);}
+.cbsection2 p {width: 100%;}
+.divs{display: none;}
+/* .divw{display: block;} */
+
+.cbsection3{background-color: rgba(40, 17, 7, 0.097);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;}
+.cbsection3 div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;}
+.cbsection3 img{height: 200px;
+            width: 200px;
+            padding: 40px;
+            border-radius: 5%;}
+.cbsection3 p{ width: 400px;}
+
+.calendly-inline-widget{position: relative;
+                        top: 10% !important;
+                        width: 40%;
+                        max-height: 600px;}
+
+@media screen and (min-width:600px) and (max-width: 850px) {
+    .cbsection2 {height: 1400px;}
+    .cbsection2 div{width: 150px;}}
+
+@media screen and (max-width: 600px) {
+        .cbsection2 {height: 1400px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;}
+        .calendly-inline-widget{position: relative;
+            top: -3% !important;
+            width: 70%;}
+        .divs{display: block;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+            width: 80%;
+            text-indent: 20px;}
+        .divw{display: none;}
+        .cbsection2 p {width: 96%;}}
