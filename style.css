@@ -268,7 +268,8 @@ footer a, footer p{color: rgb(213, 217, 220);}
 .Isabelle div{display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 60px;}
+        padding: 60px;
+        width: 60%;}
 .Isabelle img{height: 200px;
             border-radius: 5px;
             padding: 40px;
@@ -276,21 +277,44 @@ footer a, footer p{color: rgb(213, 217, 220);}
 .Isabelle p{ width: 80%;}
 .Isabelle h1{color: rgb(12, 12, 76);}
 
-/* Giovanna */
-.Giovanna{background-color: rgba(40, 17, 7, 0.097);
+/* Victoria */
+.Victoria{background-color: rgba(40, 17, 7, 0.097);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: max-content;}
-.Giovanna div{display: flex;
+.Victoria div{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        width: 55%;
+        padding-right: 0px;}
+.Victoria img{height: 200px;
+            border-radius: 5px;
+            padding: 20px;
+            border-radius: 45%;}
+.Victoria p{ width: 80%;
+            padding-right: 0px;}
+.Victoria h1{color: rgb(12, 12, 76);}
+
+/* Quote-team */
+.Quote-Team{background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: max-content;}
+.Quote-Team div{display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 60px;}
 
 @media screen and (max-width: 600px) {
     .Isabelle {flex-direction: column;}
-    .Giovanna div {height: max-content}
+    .Victoria {flex-direction: column;}
+    .Victoria p, .Victoria div {padding-right: 60px;}
+    .Quote-Team div {height: max-content}
 }
 
 /* Courses */
@@ -307,7 +331,7 @@ footer a, footer p{color: rgb(213, 217, 220);}
         justify-content: center;
         padding: 60px;}
 
-.coursesquote2{background-color: rgba(40, 17, 7, 0.097);
+.coursesquote2{background-color: white;
     display: flex;
     flex-direction: row;
     justify-content:center;
